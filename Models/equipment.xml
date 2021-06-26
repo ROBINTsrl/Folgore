@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	
+	<!--back-->
+	<!--right -->
+	<!--up -->
+	     <model>
+		<name>etc</name>
+		<path>Aircraft/bf109/Models/etc.ac</path>
+		<offsets>
+			<x-m>2.7</x-m>
+			<y-m>0.0</y-m>
+			<z-m>-0.47</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+
+
+<!--
+
+-->
+
+
+    <model>
+		<name>sc250</name>
+		<path>Aircraft/bf109/Models/sc250.xml</path>
+		<offsets>
+			<x-m>2.7</x-m>
+			<y-m>0.0</y-m>
+			<z-m>-0.47</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+ <animation>
+  <type>select</type>
+  <object-name>sc250</object-name>
+  <condition>
+     <and>
+        <equals>
+          <property>sim/weight[0]/selected</property>
+          <value>SC250 Bomb</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[0]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+  </condition>
+ </animation>
+    <model>
+		<name>nc250</name>
+		<path>Aircraft/bf109/Models/sc250.xml</path>
+		<offsets>
+			<x-m>2.7</x-m>
+			<y-m>0.0</y-m>
+			<z-m>-0.47</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+ <animation>
+  <type>select</type>
+  <object-name>nc250</object-name>
+  <condition>
+     <and>
+        <equals>
+          <property>sim/weight[0]/selected</property>
+          <value>NC250 Bomb</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[0]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+  </condition>
+ </animation>
+
+
+     <model>
+		<name>Droptank</name>
+		<path>Aircraft/bf109/Models/droptank.ac</path>
+		<offsets>
+			<x-m>2.7</x-m>
+			<y-m>0.0</y-m>
+			<z-m>-0.47</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+
+ <animation>
+  <type>select</type>
+  <object-name>Droptank</object-name>
+  <condition>
+     <and>
+        <equals>
+          <property>sim/weight[0]/selected</property>
+          <value>Droptank</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[0]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+  </condition>
+ </animation>
+
+</PropertyList>

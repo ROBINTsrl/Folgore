@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>fueldump-ger.ac</path>
+
+ <animation>
+  <type>translate</type>
+  <object-name>Cube.001</object-name>
+  <property>controls/engines/engine/fueldump-pulled</property>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1</ind>
+    <dep>0.02</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>Cube.001</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>true</repeatable>
+   <binding>
+      <command>nasal</command>
+       <script>bf109.fuel_jettison()</script>
+   </binding>
+    <binding>
+      <command>property-assign</command>
+      <property>controls/engines/engine/fueldump-pulled</property>
+    <value>true</value>
+    </binding>
+        <mod-up>
+          <binding>
+            <command>property-assign</command>
+      <property>controls/engines/engine/fueldump-pulled</property>
+    <value>false</value>
+    </binding>
+        </mod-up>
+  </action>
+</animation>
+</PropertyList>
+
+

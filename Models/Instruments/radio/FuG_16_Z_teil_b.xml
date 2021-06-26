@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>Aircraft/bf109/Models/Instruments/radio/FuG_16_Z_teil_b.ac</path>
+<!-- grosser Schalter -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Drehschalter.001</object-name>
+  <property></property>
+   <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1</ind>
+    <dep>30</dep>
+   </entry>
+   <entry>
+    <ind>2</ind>
+    <dep>-30</dep>
+   </entry>
+  </interpolation>
+ 
+
+  <center>
+   <x-m>0.001</x-m>
+   <y-m>-0.002</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>Drehschalter.001</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>Drehschalter.001</object-name>
+  <action>
+    <button>1</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+
+  </action>
+</animation> 
+</PropertyList>
+
+

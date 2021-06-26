@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>taillock-ger.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>lever</object-name>
+  <property>controls/gear/tailwheel-lock</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>180</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.008</x-m>
+   <y-m>0.006</y-m>
+   <z-m>-0.001</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>lever</object-name>
+  <property>controls/gear/tailwheel-lock</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0.05</dep>
+   </entry>
+   <entry>
+    <ind>1.00</ind>
+    <dep>0.0</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>1.0</x>
+   <y>0.000000</y>
+   <z>-0.0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>lever</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/gear/tailwheel-lock</property>
+   </binding>
+  </action>
+</animation>
+
+</PropertyList>
+
+

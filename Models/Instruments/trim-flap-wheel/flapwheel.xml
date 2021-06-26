@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>flapwheel.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Circle</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>1800</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.001</y-m>
+   <z-m>-0.102</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+  <animation>
+    <type>pick</type>
+    <object-name>Circle</object-name>
+    <visible>true</visible>
+    <action>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/flight/flaps</property>
+        <step>-0.1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>0</wrap>
+      </binding>
+    </action>
+ </animation>
+  <animation>
+    <type>pick</type>
+    <object-name>Circle</object-name>
+    <visible>true</visible>
+    <action>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/flight/flaps</property>
+        <step>0.1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>0</wrap>
+      </binding>
+    </action>
+ </animation>
+
+
+</PropertyList>
+
+

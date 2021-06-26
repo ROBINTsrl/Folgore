@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <name>Sim_startup</name>
+  <modal>false</modal>
+  <draggable>true</draggable>
+  <layout>vbox</layout>
+  <x>10</x>
+  <y>-40</y>
+
+  <group>
+
+    <padding>6</padding>
+    <layout>hbox</layout>
+
+    <text>
+      <label>Startup Configuration</label>
+    </text>
+
+    <button>
+      <halign>right</halign>
+      <pref-width>20</pref-width>
+      <pref-height>20</pref-height>
+      <legend>X</legend>
+      <key>Esc</key>
+      <binding>
+        <command>dialog-close</command>
+      </binding>
+    </button>
+  </group>
+
+  <hrule/>
+
+  <group>
+
+    <layout>table</layout>
+
+    <text>
+      <row>0</row>
+      <col>0</col>
+      <label>Altitude</label>
+    </text>
+    <input>
+      <name>altitude</name>
+      <halign>right</halign>
+      <row>0</row>
+      <col>1</col>
+      <property>/position/altitude-ft</property>
+      <type>FLOAT</type>
+      <width>10</width>
+      <binding>
+        <command>dialog-apply</command>
+        <object-name>altitude</object-name>
+      </binding>
+    </input>
+
+    <text>
+      <row>1</row>
+      <col>0</col>
+      <label>Airspeed</label>
+    </text>
+    <input>
+      <name>velocity</name>
+      <halign>right</halign>
+      <row>1</row>
+      <col>1</col>
+      <property>/velocities/airspeed-kt</property>
+      <type>FLOAT</type>
+      <width>10</width>
+      <binding>
+        <command>dialog-apply</command>
+        <object-name>velocity</object-name>
+      </binding>
+    </input>
+
+    <text>
+      <row>2</row>
+      <col>0</col>
+      <label>Heading</label>
+    </text>
+
+    <input>
+      <name>heading</name>
+      <halign>right</halign>
+      <row>2</row>
+      <col>1</col>
+      <property>/orientation/heading-deg</property>
+      <type>FLOAT</type>
+      <width>10</width>
+      <binding>
+        <command>dialog-apply</command>
+        <object-name>heading</object-name>
+      </binding>
+    </input>
+
+    <text>
+      <row>3</row>
+      <col>0</col>
+      <label>Engine running</label>
+    </text>
+
+    <checkbox>
+      <name>running</name>
+      <halign>left</halign>
+      <row>3</row>
+      <col>1</col>
+      <binding>
+        <command>nasal</command>
+        <script>merlin.magicstart();</script>
+      </binding>
+    </checkbox>
+
+    <text>
+      <row>4</row>
+      <col>0</col>
+      <label>Gear down</label>
+    </text>
+
+    <checkbox>
+      <name>geardown</name>
+      <halign>left</halign>
+      <row>4</row>
+      <col>1</col>
+      <property>/controls/gear/gear-down</property>
+      <binding>
+        <command>dialog-apply</command>
+        <object-name>geardown</object-name>
+      </binding>
+    </checkbox>
+
+    <text>
+      <row>5</row>
+      <col>0</col>
+      <label>Throttle</label>
+    </text>
+
+    <slider>
+      <row>5</row>
+      <col>1</col>
+      <name>throttle</name>
+      <min>0.0</min>
+      <max>1.0</max>
+      <step>0.1</step>
+      <live>true</live>
+      <property>/controls/engines/engine[0]/throttle</property>
+      <binding>
+        <command>dialog-apply</command>
+        <object-name>throttle</object-name>
+      </binding>
+    </slider>
+
+    <button>
+      <row>6</row>
+      <col>0</col>
+      <halign>left</halign>
+      <legend>Payload</legend>
+      <binding>
+        <command>nasal</command>
+        <script>spit9.payload.open();</script>
+      </binding>
+    </button>
+
+    <button>
+      <row>7</row>
+      <col>0</col>
+      <halign>left</halign>
+      <legend>Apply</legend>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+    </button>
+
+    <button>
+      <row>7</row>
+      <col>1</col>
+      <halign>right</halign>
+      <legend>Apply and unpause</legend>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/freeze/master</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/freeze/clock</property>
+      </binding>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+      <binding>
+        <command>dialog-close</command>
+      </binding>
+    </button>
+
+  </group>
+
+</PropertyList>

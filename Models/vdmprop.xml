@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>vdm.ac</path>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>spdisk</object-name>
+    <object-name>fpdisk</object-name>
+  </effect>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Prop1</object-name>
+  <object-name>Prop2</object-name>
+  <object-name>Prop3</object-name>
+  <property>engines/engine[0]/crankloop</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>45</dep>
+   </entry>
+  <entry>
+    <ind>0.2</ind>
+    <dep>90</dep>
+   </entry>
+  <entry>
+    <ind>0.25</ind>
+    <dep>135</dep>
+   </entry>
+  <entry>
+    <ind>0.45</ind>
+    <dep>180</dep>
+   </entry>
+  <entry>
+    <ind>0.5</ind>
+    <dep>225</dep>
+   </entry>
+  <entry>
+    <ind>0.7</ind>
+    <dep>270</dep>
+   </entry>
+  <entry>
+    <ind>0.75</ind>
+    <dep>315</dep>
+   </entry>
+  <entry>
+    <ind>0.95</ind>
+    <dep>0</dep>
+   </entry>
+  <entry>
+    <ind>1.0</ind>
+    <dep>45</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>-1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>select</type>
+  <object-name>Prop1</object-name>
+  <object-name>Prop2</object-name>
+  <object-name>Prop3</object-name>
+  <condition>
+
+   <not-equals>
+    <property>engines/engine[0]/running</property>
+    <value>1</value>
+   </not-equals>
+   <not-equals>
+    <property>engines/engine[0]/propstrike</property>
+    <value>1</value>
+   </not-equals>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>Prop1bend</object-name>
+  <object-name>Prop2bend</object-name>
+  <object-name>Prop3bend</object-name>
+  <condition>
+   <equals>
+    <property>engines/engine[0]/propstrike</property>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+
+<animation>
+  <type>spin</type>
+  <object-name>Prop1</object-name>
+  <object-name>Prop2</object-name>
+  <object-name>Prop3</object-name>
+  <condition>
+   <greater-than>
+    <property>engines/engine[0]/rpm</property>
+    <value>20</value>
+   </greater-than>
+  </condition>
+    <property>engines/engine[0]/rpm</property>
+    <factor>1.0</factor>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>select</type>
+  <object-name>fpdisk</object-name>
+  <condition>
+   <greater-than>
+    <property>engines/engine[0]/rpm</property>
+    <value>1700</value>
+   </greater-than>
+   <not-equals>
+    <property>engines/engine[0]/propstrike</property>
+    <value>1</value>
+   </not-equals>
+  </condition>
+ </animation>
+
+<animation>
+  <type>spin</type>
+  <object-name>spdisk</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor>0.35</factor>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>spin</type>
+  <object-name>fpdisk</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor>0.01</factor>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+
+
+
+ <animation>
+  <type>select</type>
+  <object-name>spdisk</object-name>
+  <condition>
+   <less-than>
+    <property>engines/engine[0]/rpm</property>
+    <value>1701</value>
+   </less-than>
+   <greater-than>
+    <property>engines/engine[0]/rpm</property>
+    <value>100</value>
+   </greater-than>
+   <not-equals>
+    <property>engines/engine[0]/propstrike</property>
+    <value>1</value>
+   </not-equals>
+  </condition>
+ </animation>
+
+</PropertyList>

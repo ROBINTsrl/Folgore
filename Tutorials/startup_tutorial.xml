@@ -1,0 +1,203 @@
+<PropertyList>
+	<name>Engine Start</name>
+	<description>This tutorial teaches the M.C. 202 Folgore engine start procedure</description>
+
+	<init>
+		<set>
+			<property>/sim/current-view/view-number</property>
+			<value>0</value>
+		</set>
+		<set>
+			<property>/controls/gear/brake-parking</property>
+			<value>1</value>
+		</set>
+		<set>
+			<property>/controls/flight/flaps</property>
+			<value>0.0</value>
+		</set>
+		<set>
+			<property>/controls/engines/engine[0]/throttle</property>
+			<value>0.0</value>
+		</set>
+		<set>
+			<property>/engines/engine[0]/running</property>
+			<value>0</value>
+		</set>
+	</init>
+
+	<step>
+		<message>
+			Set Magneto Switch to M1+2.
+		</message>
+		<view>
+			<heading-offset-deg>17</heading-offset-deg>
+			<pitch-offset-deg>-20</pitch-offset-deg>
+			<field-of-view>27</field-of-view>
+		</view>
+		<marker>
+			<x-m>3.2</x-m>
+			<y-m>-0.225</y-m>
+			<z-m>0.33</z-m>
+		</marker>
+		<exit>
+			<condition>
+				<equals>
+					<property>/controls/engines/engine[0]/magnetos</property>
+					<value>3</value>
+				</equals>
+			</condition>
+		</exit>
+	</step>
+
+	<step>
+		<message>
+			Move Cutoff lever forward.
+		</message>
+		<view>
+			<heading-offset-deg>22</heading-offset-deg>
+			<pitch-offset-deg>-26</pitch-offset-deg>
+			<field-of-view>27</field-of-view>
+		</view>
+		<marker>
+			<x-m>3.484</x-m>
+			<y-m>-0.323</y-m>
+			<z-m>0.559</z-m>
+		</marker>
+		<exit>
+			<condition>
+				<greater-than>
+					<property>/controls/fuel/switch-position</property>
+					<value>-1</value>
+				</greater-than>
+			</condition>
+		</exit>
+	</step>
+
+	<step>
+		<message>
+			Prime the engine 5-6 times.
+		</message>
+		<view>
+			<heading-offset-deg>27.3</heading-offset-deg>
+			<pitch-offset-deg>-42.6</pitch-offset-deg>
+			<field-of-view>27</field-of-view>
+		</view>
+		<marker>
+			<x-m>3.507</x-m>
+			<y-m>0.468</y-m>
+			<z-m>0.632</z-m>
+		</marker>
+		<exit>
+			<condition>
+				<greater-than>
+					<property>/controls/engines/engine[0]/primer</property>
+					<value>0.9</value>
+				</greater-than>
+			</condition>
+		</exit>
+	</step>
+
+	<step>
+		<message>
+			Move Throttle to 1/3.
+		</message>
+		<view>
+			<heading-offset-deg>23.8</heading-offset-deg>
+			<pitch-offset-deg>-23.4</pitch-offset-deg>
+			<field-of-view>27</field-of-view>
+		</view>
+		<marker>
+			<x-m>3.4051</x-m>
+			<y-m>0.4453</y-m>
+			<z-m>0.6231</z-m>
+		</marker>
+		<exit>
+			<condition>
+				<greater-than>
+					<property>/controls/engines/engine[0]/throttle</property>
+					<value>0.25</value>
+				</greater-than>
+			</condition>
+		</exit>
+	</step>
+	<step>
+		<message>
+			Adjust Propeller pitch (shift+n) to read 10.30 on the clock shaped instrument.
+		</message>
+		<view>
+			<heading-offset-deg>346.5</heading-offset-deg>
+			<pitch-offset-deg>-19.6</pitch-offset-deg>
+			<field-of-view>27</field-of-view>
+		</view>
+		<marker>
+			<x-m>3.438</x-m>
+			<y-m>0.445</y-m>
+			<z-m>0.623</z-m>
+		</marker>
+		<exit>
+			<condition>
+				<less-than>
+					<property>/controls/engines/engine[0]/propeller-pitch</property>
+					<value>0.5</value>
+				</less-than>
+			</condition>
+		</exit>
+	</step>
+	<step>
+		<message>
+			Pull Starter Handle.
+		</message>
+		<view>
+			<heading-offset-deg>16.8</heading-offset-deg>
+			<pitch-offset-deg>-22</pitch-offset-deg>
+			<field-of-view>27</field-of-view>
+		</view>
+		<marker>
+			<x-m>3.438</x-m>
+			<y-m>0.445</y-m>
+			<z-m>0.623</z-m>
+		</marker>
+		<exit>
+			<condition>
+				<greater-than>
+					<property>/engines/engine[0]/running</property>
+					<value>0</value>
+				</greater-than>
+			</condition>
+		</exit>
+	</step>
+
+	<step>
+		<message>Throttle back and keep rpm (U/min) below 1000.</message>
+		<view>
+			<heading-offset-deg>351.4</heading-offset-deg>
+			<pitch-offset-deg>-16.8</pitch-offset-deg>
+			<field-of-view>27</field-of-view>
+		</view>
+		<marker>
+			<x-m>3.436</x-m>
+			<y-m>-0.358</y-m>
+			<z-m>0.594</z-m>
+			<scale>3.5</scale>
+		</marker>
+
+		<exit>
+			<condition>
+				<less-than>
+					<property>/engines/engine[0]/rpm</property>
+					<value>1000.0</value>
+				</less-than>
+			</condition>
+		</exit>
+	</step>
+
+
+	<end>
+		<message>The engine should now be running.</message>
+		<view>
+			<heading-offset-deg>0</heading-offset-deg>
+			<pitch-offset-deg>-20</pitch-offset-deg>
+			<field-of-view>55</field-of-view>
+		</view>
+	</end>
+</PropertyList>

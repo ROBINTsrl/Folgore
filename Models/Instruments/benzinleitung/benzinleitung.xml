@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>benzinleitung.ac</path>
+
+ <animation>
+  <type>translate</type>
+  <object-name>fuel</object-name>
+  <property>controls/engines/engine[0]/primer</property>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep>0.105</dep>
+   </entry>
+   <entry>
+    <ind>1</ind>
+    <dep>0.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+
+</PropertyList>
+
+

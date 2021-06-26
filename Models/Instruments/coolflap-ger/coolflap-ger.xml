@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>coolflap-ger.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>lever</object-name>
+  <property>controls/engines/engine[0]/radlever</property>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep>-90</dep>
+   </entry>
+   <entry>
+    <ind>2</ind>
+    <dep>90</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.0</x-m>
+   <y-m>-0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>lever</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+<binding>
+ <command>property-cycle</command>
+ <property>controls/engines/engine[0]/radlever</property>
+ <value type="int">0</value>
+ <value type="int">1</value>
+ <value type="int">2</value>
+ <wrap>1</wrap>
+</binding>
+
+  </action>
+</animation>
+
+</PropertyList>
+
+

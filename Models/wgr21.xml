@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>wgr21.ac</path>
+
+ <model>
+	<name>male</name>
+  <path>Aircraft/bf109/Models/Effects/wgr-smoke.xml</path>
+ </model>
+
+</PropertyList>
+
+

@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<gun n="0">
+		<serviceable type="bool">true</serviceable>
+		<fire type="bool">false</fire>
+	</gun>
+
+	<gun n="1">
+		<serviceable type="bool">true</serviceable>
+		<fire type="bool">false</fire>
+	</gun>
+
+	<gun n="2">
+		<serviceable type="bool">false</serviceable>
+		<fire type="bool">false</fire>
+	</gun>
+
+	<gun n="3">
+		<serviceable type="bool">false</serviceable>
+		<fire type="bool">false</fire>
+	</gun>
+
+	<cannon n="0">
+		<serviceable type="bool">true</serviceable>
+		<fire type="bool">false</fire>
+	</cannon>
+
+	<pylon n="0">
+		<type type="int">0</type>
+		<armed type="int">0</armed>
+		<fire type="bool">false</fire>
+		<serviceable type="bool">true</serviceable>
+		<release_bomb type="bool">false</release_bomb>
+		<fire_rocket type="bool">false</fire_rocket>
+		<force-lb type="float">1000</force-lb>
+		<force-azimuth-deg type="float">0</force-azimuth-deg>
+		<force-elevation-deg type="float">0</force-elevation-deg>
+	</pylon>
+
+	<pylon n="1">
+		<type type="int">0</type>
+		<armed type="int">0</armed>
+		<fire type="bool">false</fire>
+		<serviceable type="bool">true</serviceable>
+		<release_bomb type="bool">false</release_bomb>
+	</pylon>
+
+	<pylon n="2">
+		<type type="int">0</type>
+		<armed type="int">0</armed>
+		<fire type="bool">false</fire>
+		<serviceable type="bool">true</serviceable>
+		<release_bomb type="bool">false</release_bomb>
+		<force-lb type="float">1000</force-lb>
+		<force-azimuth-deg type="float">0</force-azimuth-deg>
+		<force-elevation-deg type="float">0</force-elevation-deg>
+	</pylon>
+
+	<rpmode type= "int">0</rpmode>
+	
+	<rocket n="0">
+		<serviceable type="bool">true</serviceable>
+		<fire type="bool">false</fire>
+		<drop type="bool">false</drop>
+	</rocket>
+
+	<bomb_fused type="int">0</bomb_fused>
+	<bombpacket type="int">1</bombpacket>
+	<bombsingle type="bool">true</bombsingle>
+	<bombtrain type="float">0.5</bombtrain>
+	<rocket_fused type="int">0</rocket_fused>
+	<rocketpacket type="int">2</rocketpacket>
+	<rocketsingle type="bool">false</rocketsingle>
+	<rockettrain type="float">0.5</rockettrain>
+	<weapon_selected type="int">3</weapon_selected>
+
+</PropertyList>

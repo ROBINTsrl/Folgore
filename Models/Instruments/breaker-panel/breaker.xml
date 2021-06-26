@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>Aircraft/bf109/Models/breaker.ac</path>
+<!-- Dimmer 
+ <animation>
+  <type>rotate</type>
+  <object-name>knob</object-name>
+  <object-name>arrow</object-name>
+  <property></property>
+   <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>2</ind>
+    <dep>0</dep>
+   </entry>
+  </interpolation>
+
+  <center>
+   <x-m>3.264</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.219</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>knob</object-name>
+  <object-name>arrow</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>knob</object-name>
+  <object-name>arrow</object-name>
+  <action>
+    <button>1</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+
+  </action>
+</animation>
+-->
+<!-- Sicherungen 
+<animation>
+  <type>pick</type>
+  <object-name>A9.1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A9.2</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>A10.1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A10.2</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A11.1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A11.2</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A12.1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A12.2</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A13.1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A13.2</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A21.1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A21.2</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A22.1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A22.2</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A27.1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A27.2</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A28.1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>A28.2</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+
+    </binding>
+  </action>
+</animation>
+ -->
+</PropertyList>
+
+

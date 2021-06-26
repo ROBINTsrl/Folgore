@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>fuelgauge.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>Face</object-name>
+  <object-name>Needle1</object-name>
+  <emission>
+    <factor-prop>controls/lighting/instruments-norm</factor-prop>
+    <red>0.5</red>
+    <green>0.25</green>
+    <blue>0.8</blue>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Needle1</object-name>
+  <property>consumables/fuel/tank[0]/level-gal_us</property>
+  <min>8.0</min>
+  <max>100</max>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>100</ind>
+    <dep>83</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>-0.017</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>shotcounter.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>shot</object-name>
+  <object-name>Blende</object-name>
+  <object-name>shotrear1</object-name>
+  <emission>
+    <factor-prop>controls/lighting/instruments-norm</factor-prop>
+    <red>0.25</red>
+    <green>0.25</green>
+    <blue>0.8</blue>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>drum</object-name>
+  <property>ai/submodels/submodel[3]/count</property>
+  <factor>1.3</factor>
+   <center>
+    <x-m>-0.002</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+<!--
+  <animation>
+    <type>pick</type>
+    <object-name>knob</object-name>
+    <visible>true</visible>
+    <action>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/altimeter/setting-inhg</property>
+        <step>0.009</step>
+        <min>0</min>
+        <max>60</max>
+        <wrap>0</wrap>
+      </binding>
+    </action>
+ </animation>
+  <animation>
+    <type>pick</type>
+    <object-name>knob</object-name>
+    <visible>true</visible>
+    <action>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/altimeter/setting-inhg</property>
+        <step>-0.009</step>
+        <min>0</min>
+        <max>60</max>
+        <wrap>0</wrap>
+      </binding>
+    </action>
+ </animation>
+ -->
+</PropertyList>
+
+

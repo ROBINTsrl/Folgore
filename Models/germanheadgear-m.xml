@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <path>germanheadgear-m.ac</path>
+
+  <animation>
+    <enable-hot type="bool">false</enable-hot>
+  </animation>
+
+ <animation>
+  <name>head</name>
+  <object-name>hose</object-name>
+  <object-name>oxymask</object-name>
+  <object-name>helmet</object-name>
+  <object-name>goggles</object-name>
+  <object-name>glasses</object-name>
+ </animation>
+
+
+
+</PropertyList>

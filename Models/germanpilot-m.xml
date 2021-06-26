@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <path>germanpilotsuit-m.ac</path>
+
+  <animation>
+    <enable-hot type="bool">false</enable-hot>
+  </animation>
+
+ <animation>
+  <name>arm1.L</name>
+  <object-name>suitarm1.L</object-name>
+ </animation>
+ <animation>
+  <name>arm2.L</name>
+  <object-name>suitarm2.L</object-name>
+ </animation>
+
+ <animation>
+  <name>arm1.R</name>
+  <object-name>suitarm1.R</object-name>
+ </animation>
+ <animation>
+  <name>arm2.R</name>
+  <object-name>suitarm2.R</object-name>
+ </animation>
+
+ <animation>
+  <name>chest</name>
+  <object-name>suitchest</object-name>
+  <object-name>buckle</object-name>
+  <object-name>belt</object-name>
+ </animation>
+
+ <animation>
+  <name>hip</name>
+  <object-name>suithip</object-name>
+ </animation>
+
+ <animation>
+  <name>leg1.R</name>
+  <object-name>suitleg1.R</object-name>
+ </animation>
+
+ <animation>
+  <name>leg2.R</name>
+  <object-name>suitleg2.R</object-name>
+  <object-name>boot2.R</object-name>
+ </animation>
+
+ <animation>
+  <name>leg1.L</name>
+  <object-name>suitleg1.L</object-name>
+ </animation>
+
+ <animation>
+  <name>leg2.L</name>
+  <object-name>suitleg2.L</object-name>
+  <object-name>boot2.L</object-name>
+ </animation>
+
+ <animation>
+  <name>foot.L</name>
+  <object-name>boot.L</object-name>
+ </animation>
+
+ <animation>
+  <name>foot.R</name>
+  <object-name>boot.R</object-name>
+ </animation>
+
+</PropertyList>

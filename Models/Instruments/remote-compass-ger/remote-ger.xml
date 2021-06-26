@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>remote-ger.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>Face</object-name>
+  <object-name>Face2</object-name>
+  <emission>
+    <factor-prop>controls/lighting/instruments-norm</factor-prop>
+    <red>0.25</red>
+    <green>0.25</green>
+    <blue>0.8</blue>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Face</object-name>
+  <object-name>Face2</object-name>
+  <property>instrumentation/magnetic-compass/indicated-heading-deg</property>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Face2</object-name>
+  <property>instrumentation/magnetic-compass/bookmark-heading-deg</property>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>knob</object-name>
+    <visible>true</visible>
+    <action>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/magnetic-compass/bookmark-heading-deg</property>
+        <step>2.0</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+ </animation>
+  <animation>
+    <type>pick</type>
+    <object-name>knob</object-name>
+    <visible>true</visible>
+    <action>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/magnetic-compass/bookmark-heading-deg</property>
+        <step>-2.0</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+ </animation>
+
+
+</PropertyList>
+
+

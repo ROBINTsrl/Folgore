@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <sim>
+    <model>
+      <livery>
+        <variant type="string">Dayfighter green 2</variant>
+        <texture>Liveries/bf109g-1.png</texture>
+    	<amb_correction type="double">0.2</amb_correction>
+        <dirt_factor type="double">0.5</dirt_factor>
+  	 <refl_correction type="string">-0.5</refl_correction>
+      </livery>
+    </model>
+  </sim>
+</PropertyList>

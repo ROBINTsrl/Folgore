@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	
+ 
+		<!-- pylons 0 and 2 (wings):
+		0 = not selected
+		1 = MG 151 pods
+		2 = loaded WGR
+		3 = empty WGR
+
+		pylon 1 (fuselage)
+		0 = not selected
+		1 = selected, but gone
+		2 = Droptank
+		3 = SC250 Bomb
+
+		-->
+<!-- pylon 0 left -->
+	     <model>
+		<name>pylon1</name>
+		<path>Aircraft/bf109/Models/etc.ac</path>
+		<offsets>
+			<x-m>-1.7244</x-m>
+			<y-m>0.0</y-m>
+			<z-m>-0.47</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+
+
+		<animation>
+				<type>select</type>
+				<object-name>pylon1</object-name>
+				<condition>
+						<not-equals>
+								<property>sim/armament/pylon[1]/type</property>
+								<value>0</value>
+						</not-equals>
+				</condition>
+		</animation>
+	<model> 
+				<name>droptank1</name>
+				<path>Aircraft/bf109/Models/droptank.ac</path>
+				<offsets>
+					<x-m>-1.7244</x-m>
+					<y-m>0.0</y-m>
+					<z-m>-0.47</z-m>
+					<pitch-deg>0.0</pitch-deg>
+				</offsets>
+		</model>
+		<animation>
+				<type>select</type>
+				<object-name>droptank1</object-name>
+				<condition>
+						<equals>
+								<property>sim/armament/pylon[1]/type</property>
+								<value>2</value>
+						</equals>
+				</condition>
+		</animation>
+
+    <model>
+		<name>sc250</name>
+		<path>Aircraft/bf109/Models/sc250.xml</path>
+		<offsets>
+			<x-m>-1.7244</x-m>
+			<y-m>0.0</y-m>
+			<z-m>-0.47</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+ <animation>
+  <type>select</type>
+  <object-name>sc250</object-name>
+  <condition>
+        <equals>
+          <property>sim/armament/pylon[1]/type</property>
+          <value>3</value>
+        </equals>
+  </condition>
+ </animation>
+
+	<model>
+		<name>leftgun</name>
+		<path>Aircraft/bf109/Models/mg151pod.ac</path>
+		<offsets>
+			<x-m>-1.8</x-m>
+			<y-m>-2.2</y-m>
+			<z-m>-0.35</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+ <animation>
+  <type>select</type>
+  <object-name>leftgun</object-name>
+  <condition>
+        <equals>
+          <property>sim/armament/pylon[0]/type</property>
+          <value>1</value>
+        </equals>
+  </condition>
+ </animation>
+
+	<model>
+		<name>rightgun</name>
+		<path>Aircraft/bf109/Models/mg151pod.ac</path>
+		<offsets>
+			<x-m>-1.8</x-m>
+			<y-m>2.2</y-m>
+			<z-m>-0.35</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>
+ <animation>
+  <type>select</type>
+  <object-name>rightgun</object-name>
+  <condition>
+        <equals>
+          <property>sim/armament/pylon[2]/type</property>
+          <value>1</value>
+        </equals>
+  </condition>
+ </animation>
+
+	<model>
+		<name>leftwgr</name>
+		<path>Aircraft/bf109/Models/wgr21-launcher.ac</path>
+		<offsets>
+			<x-m>-1.7244</x-m>
+			<y-m>-2.2</y-m>
+			<z-m>-0.52</z-m>
+			<pitch-deg>8.0</pitch-deg>
+		</offsets>
+	</model>	
+ <animation>
+  <type>select</type>
+  <object-name>leftwgr</object-name>
+  <condition>
+		<or>
+        <equals>
+          <property>sim/armament/pylon[0]/type</property>
+          <value>2</value>
+        </equals>
+        <equals>
+          <property>sim/armament/pylon[0]/type</property>
+          <value>3</value>
+        </equals>
+		</or>
+  </condition>
+ </animation>
+
+	<model>
+		<name>rightwgr</name>
+		<path>Aircraft/bf109/Models/wgr21-launcher.ac</path>
+		<offsets>
+			<x-m>-1.7244</x-m>
+			<y-m>2.2</y-m>
+			<z-m>-0.52</z-m>
+			<pitch-deg>8.0</pitch-deg>
+		</offsets>
+	</model>	
+ <animation>
+  <type>select</type>
+  <object-name>rightwgr</object-name>
+  <condition>
+		<or>
+        <equals>
+          <property>sim/armament/pylon[2]/type</property>
+          <value>2</value>
+        </equals>
+        <equals>
+          <property>sim/armament/pylon[2]/type</property>
+          <value>3</value>
+        </equals>
+		</or>
+  </condition>
+ </animation>
+
+	<model>
+		<name>leftrocket</name>
+		<path>Aircraft/bf109/Models/wgr21.ac</path>
+		<offsets>
+			<x-m>-1.7244</x-m>
+			<y-m>-2.2</y-m>
+			<z-m>-0.52</z-m>
+			<pitch-deg>8.0</pitch-deg>
+		</offsets>
+	</model>
+ <animation>
+  <type>select</type>
+  <object-name>leftrocket</object-name>
+  <condition>
+        <equals>
+          <property>sim/armament/pylon[0]/type</property>
+          <value>2</value>
+        </equals>
+  </condition>
+ </animation>
+
+	<model>
+		<name>rightrocket</name>
+		<path>Aircraft/bf109/Models/wgr21.ac</path>
+		<offsets>
+			<x-m>-1.7244</x-m>
+			<y-m>2.2</y-m>
+			<z-m>-0.52</z-m>
+			<pitch-deg>8.0</pitch-deg>
+		</offsets>
+	</model>
+ <animation>
+  <type>select</type>
+  <object-name>rightrocket</object-name>
+  <condition>
+        <equals>
+          <property>sim/armament/pylon[2]/type</property>
+          <value>2</value>
+        </equals>
+  </condition>
+ </animation>
+
+</PropertyList>

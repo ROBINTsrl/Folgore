@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+
+<nasal include="Aircraft/Generic/Human/Nasal/MPanimate.nas.xml"/>
+
+ <model>
+	<name>male</name>
+  <path>Aircraft/Generic/Human/Models/pilot-inc.xml</path>
+ <overlay include="Aircraft/Generic/Human/Models/generic-male.xml">
+       <model n="0">
+	       <name>waldo</name>
+         <path>Aircraft/Generic/Human/Models/waldo.xml</path>
+       </model>
+
+       <model n="1">
+	        <name>outfit</name>
+          <path>Aircraft/bf109/Models/germanpilot-m.xml</path>
+       </model>
+
+       <model n="2">
+	        <name>outfit</name>
+          <path>Aircraft/bf109/Models/germanheadgear-m.xml</path>
+       </model>
+
+   </overlay>
+ </model>
+
+<model>
+	<name>hands</name>
+  <path>Aircraft/Generic/Human/Models/pilot-hands-inc.xml</path>
+    <overlay include="Aircraft/Generic/Human/Models/generic-male.xml">
+        <path>Aircraft/Generic/Human/Models/hands-m.ac</path>
+    </overlay>
+ </model>
+
+</PropertyList>

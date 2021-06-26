@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+  <PropertyList> 
+    <path>revi-ger.ac</path>
+
+  <effect>
+    <inherits-from>Aircraft/bf109/Models/Effects/glass</inherits-from>
+  <object-name>sunshade</object-name>
+  <object-name>lens2</object-name>
+  </effect>
+
+<animation>
+  <type>rotate</type>
+  <object-name>fixture</object-name>
+  <object-name>casing</object-name>
+
+  <object-name>sunshade</object-name>
+  <object-name>lens2</object-name>
+  <object-name>crosshair</object-name>
+  <property>controls/armament/revi/position-norm</property>
+
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+  </entry>
+   <entry>
+    <ind>0.5</ind>
+    <dep>-90</dep>
+  </entry>
+  <entry>
+    <ind>1.00</ind>
+    <dep>-90.0</dep>
+   </entry>
+  </interpolation>
+
+  <center>
+   <x-m>3.04</x-m>
+   <y-m>-0.0421</y-m>
+   <z-m>-0.0128</z-m>
+  </center>
+
+  <axis>
+   <x>1.000000</x>
+   <y>0.000000</y>
+   <z>0.000000</z>
+  </axis>
+ </animation>
+
+
+ <animation>
+  <type>translate</type>
+  <object-name>fixture</object-name>
+  <object-name>casing</object-name>
+  <object-name>shadeholder</object-name>
+  <object-name>sunshade</object-name>
+  <object-name>lens2</object-name>
+  <object-name>crosshair</object-name>
+  <property>controls/armament/revi/position-norm</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>0.5</ind>
+    <dep>0.0</dep>
+   </entry>
+   <entry>
+    <ind>1.00</ind>
+    <dep>0.02</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>-1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+<animation>
+  <type>rotate</type>
+  <object-name>shadeholder</object-name>
+  <object-name>sunshade</object-name>
+  <property>controls/armament/revi/shadeup</property>
+  <factor>65.0</factor>
+
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.005</y-m>
+   <z-m>-0.004</z-m>
+  </center>
+
+  <axis>
+   <x>0.000000</x>
+   <y>1.000000</y>
+   <z>0.000000</z>
+  </axis>
+ </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>crosshair</object-name>
+    <condition>
+     <equals>
+      <property>controls/armament/master-arm</property>
+      <value>true</value>
+     </equals>
+    </condition>
+   </animation>
+
+ <animation>
+    <type>pick</type>
+    <object-name>casing</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>bf109.toggle_revi()</script>
+   </binding>
+    </action>
+ </animation>
+
+	<!-- *** LoD for the whole model *** -->
+    <animation> 
+      <type>range</type>
+      <min-m>0</min-m>
+      <max-m>10</max-m>
+    </animation>
+  </PropertyList>

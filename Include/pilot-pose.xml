@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <name type="string">spit_pilot</name>
+  <loop-enabled type="bool">true</loop-enabled>
+  <loop-to type="int">0</loop-to>
+  <trigger-upon type="string">Disabled</trigger-upon>
+  
+  <position>
+    <name type="string">neutral</name>
+    <rest-sec type="double">0</rest-sec>
+    <transit-sec type="double">1</transit-sec>
+    <limb>
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">36.9863</y-deg>
+      <z-deg type="double">0</z-deg>
+      <z-m type="double">-0.8225</z-m>
+    </limb>
+    <limb n="1">
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">-28.125</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="2">
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">-14</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="3">
+      <x-deg type="double">-88.8542</x-deg>
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">-50.2359</z-deg>
+    </limb>
+    <limb n="4">
+      <y-deg type="double">-23.4247</y-deg>
+      <z-deg type="double">58.2803</z-deg>
+    </limb>
+    <limb n="5">
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">0</y-deg>
+      <hand-pose type="double">1</hand-pose>
+    </limb>
+    <limb n="6">
+      <x-deg type="double">-78.6458</x-deg>
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">-63.8302</z-deg>
+    </limb>
+    <limb n="7">
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">21.9745</z-deg>
+    </limb>
+    <limb n="8">
+      <x-deg type="double">13.8095</x-deg>
+      <y-deg type="double">56.4</y-deg>
+      <hand-pose type="string">1</hand-pose>
+    </limb>
+    <limb n="9">
+      <x-deg type="double">-3.91305</x-deg>
+      <y-deg type="double">-87.8103</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="10">
+      <y-deg type="double">69.3684</y-deg>
+    </limb>
+    <limb n="11">
+      <y-deg type="double">0</y-deg>
+    </limb>
+    <limb n="12">
+      <x-deg type="double">-3.91305</x-deg>
+      <y-deg type="double">-87.8103</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="13">
+      <y-deg type="double">69.3684</y-deg>
+    </limb>
+    <limb n="14">
+      <y-deg type="double">0</y-deg>
+    </limb>
+  </position>
+
+  <position n="1">
+    <name type="string">aileron right</name>
+    <rest-sec type="double">0</rest-sec>
+    <transit-sec type="double">1</transit-sec>
+    <limb>
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">36.9863</y-deg>
+      <z-deg type="double">0</z-deg>
+      <z-m type="double">-0.8225</z-m>
+    </limb>
+    <limb n="1">
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">-28.125</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="2">
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">-14</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="3">
+      <x-deg type="double">-96.1458</x-deg>
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">-36.6415</z-deg>
+    </limb>
+    <limb n="4">
+      <y-deg type="double">10.4795</y-deg>
+      <z-deg type="double">60.1911</z-deg>
+    </limb>
+    <limb n="5">
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">0</y-deg>
+      <hand-pose type="double">1</hand-pose>
+    </limb>
+    <limb n="6">
+      <x-deg type="double">-78.6458</x-deg>
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">-63.8302</z-deg>
+    </limb>
+    <limb n="7">
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">21.9745</z-deg>
+    </limb>
+    <limb n="8">
+      <x-deg type="double">13.8095</x-deg>
+      <y-deg type="double">56.4</y-deg>
+      <hand-pose type="string">1</hand-pose>
+    </limb>
+    <limb n="9">
+      <x-deg type="double">-3.91305</x-deg>
+      <y-deg type="double">-87.8103</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="10">
+      <y-deg type="double">69.3684</y-deg>
+    </limb>
+    <limb n="11">
+      <y-deg type="double">0</y-deg>
+    </limb>
+    <limb n="12">
+      <x-deg type="double">-3.91305</x-deg>
+      <y-deg type="double">-87.8103</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="13">
+      <y-deg type="double">69.3684</y-deg>
+    </limb>
+    <limb n="14">
+      <y-deg type="double">0</y-deg>
+    </limb>
+  </position>
+
+  <position n="2">
+    <name type="string">aileron left</name>
+    <rest-sec type="double">0</rest-sec>
+    <transit-sec type="double">1</transit-sec>
+    <limb>
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">36.9863</y-deg>
+      <z-deg type="double">0</z-deg>
+      <z-m type="double">-0.8225</z-m>
+    </limb>
+    <limb n="1">
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">-28.125</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="2">
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">-14</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="3">
+      <x-deg type="double">-110</x-deg>
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">-65.066</z-deg>
+    </limb>
+    <limb n="4">
+      <y-deg type="double">-80.137</y-deg>
+      <z-deg type="double">35.3503</z-deg>
+    </limb>
+    <limb n="5">
+      <x-deg type="double">-7.14286</x-deg>
+      <y-deg type="double">37.2</y-deg>
+      <hand-pose type="double">1</hand-pose>
+    </limb>
+    <limb n="6">
+      <x-deg type="double">-78.6458</x-deg>
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">-63.8302</z-deg>
+    </limb>
+    <limb n="7">
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">21.9745</z-deg>
+    </limb>
+    <limb n="8">
+      <x-deg type="double">13.8095</x-deg>
+      <y-deg type="double">56.4</y-deg>
+      <hand-pose type="string">1</hand-pose>
+    </limb>
+    <limb n="9">
+      <x-deg type="double">-3.91305</x-deg>
+      <y-deg type="double">-87.8103</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="10">
+      <y-deg type="double">69.3684</y-deg>
+    </limb>
+    <limb n="11">
+      <y-deg type="double">0</y-deg>
+    </limb>
+    <limb n="12">
+      <x-deg type="double">-3.91305</x-deg>
+      <y-deg type="double">-87.8103</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="13">
+      <y-deg type="double">69.3684</y-deg>
+    </limb>
+    <limb n="14">
+      <y-deg type="double">0</y-deg>
+    </limb>
+  </position>
+
+  <position n="3">
+    <name type="string">elevator pushed</name>
+    <rest-sec type="double">0</rest-sec>
+    <transit-sec type="double">1</transit-sec>
+    <limb>
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">36.9863</y-deg>
+      <z-deg type="double">0</z-deg>
+      <z-m type="double">-0.8225</z-m>
+    </limb>
+    <limb n="1">
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">-28.125</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="2">
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">-14</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="3">
+      <x-deg type="double">-110</x-deg>
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">-70.0094</z-deg>
+    </limb>
+    <limb n="4">
+      <y-deg type="double">-42.5342</y-deg>
+      <z-deg type="double">21.0191</z-deg>
+    </limb>
+    <limb n="5">
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">0</y-deg>
+      <hand-pose type="double">1</hand-pose>
+    </limb>
+    <limb n="6">
+      <x-deg type="double">-78.6458</x-deg>
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">-63.8302</z-deg>
+    </limb>
+    <limb n="7">
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">21.9745</z-deg>
+    </limb>
+    <limb n="8">
+      <x-deg type="double">13.8095</x-deg>
+      <y-deg type="double">56.4</y-deg>
+      <hand-pose type="string">1</hand-pose>
+    </limb>
+    <limb n="9">
+      <x-deg type="double">-3.91305</x-deg>
+      <y-deg type="double">-87.8103</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="10">
+      <y-deg type="double">69.3684</y-deg>
+    </limb>
+    <limb n="11">
+      <y-deg type="double">0</y-deg>
+    </limb>
+    <limb n="12">
+      <x-deg type="double">-3.91305</x-deg>
+      <y-deg type="double">-87.8103</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="13">
+      <y-deg type="double">69.3684</y-deg>
+    </limb>
+    <limb n="14">
+      <y-deg type="double">0</y-deg>
+    </limb>
+  </position>
+
+  <position n="4">
+    <name type="string">elevator pulled</name>
+    <rest-sec type="double">0</rest-sec>
+    <transit-sec type="double">1</transit-sec>
+    <limb>
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">36.9863</y-deg>
+      <z-deg type="double">0</z-deg>
+      <z-m type="double">-0.8225</z-m>
+    </limb>
+    <limb n="1">
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">-28.125</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="2">
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">-14</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="3">
+      <x-deg type="double">-85.9375</x-deg>
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">-39.1132</z-deg>
+    </limb>
+    <limb n="4">
+      <y-deg type="double">-25.8904</y-deg>
+      <z-deg type="double">83.121</z-deg>
+    </limb>
+    <limb n="5">
+      <x-deg type="double">0</x-deg>
+      <y-deg type="double">0</y-deg>
+      <hand-pose type="double">1</hand-pose>
+    </limb>
+    <limb n="6">
+      <x-deg type="double">-78.6458</x-deg>
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">-63.8302</z-deg>
+    </limb>
+    <limb n="7">
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">21.9745</z-deg>
+    </limb>
+    <limb n="8">
+      <x-deg type="double">13.8095</x-deg>
+      <y-deg type="double">56.4</y-deg>
+      <hand-pose type="string">1</hand-pose>
+    </limb>
+    <limb n="9">
+      <x-deg type="double">-3.91305</x-deg>
+      <y-deg type="double">-87.8103</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="10">
+      <y-deg type="double">69.3684</y-deg>
+    </limb>
+    <limb n="11">
+      <y-deg type="double">0</y-deg>
+    </limb>
+    <limb n="12">
+      <x-deg type="double">-3.91305</x-deg>
+      <y-deg type="double">-87.8103</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="13">
+      <y-deg type="double">69.3684</y-deg>
+    </limb>
+    <limb n="14">
+      <y-deg type="double">0</y-deg>
+    </limb>
+  </position>
+</PropertyList>

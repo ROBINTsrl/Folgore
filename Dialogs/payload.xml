@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<name>payload</name>
+	<modal>false</modal>
+	<draggable>true</draggable>
+	<layout>vbox</layout>
+	<x>10</x>
+	<y>-40</y>
+
+	<group>
+		<padding>4</padding>
+		<layout>hbox</layout>
+		<text>
+			<label>Payload</label>
+		</text>
+		<button>
+			<halign>right</halign>
+			<pref-width>20</pref-width>
+			<pref-height>20</pref-height>
+			<legend>X</legend>
+			<key>Esc</key>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+	</group>
+	
+	<hrule/>
+
+	<hrule/>
+
+	<group>
+		<layout>table</layout>
+
+		<text>
+			<row>0</row>
+			<col>1</col>
+			<label>Wings:</label>
+		</text>
+
+		<button>
+			<legend>unload</legend>
+			<equal>true</equal>
+			<default>true</default>
+			<row>0</row>
+			<col>2</col>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/pylon[0]/type</property>
+				<value>0</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/pylon[2]/type</property>
+				<value>0</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/weight[0]/selected</property>
+				<value>none</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/weight[2]/selected</property>
+				<value>none</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/weight[0]/weight-lb</property>
+				<value>0</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/weight[2]/weight-lb</property>
+				<value>0</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/gun[2]/serviceable</property>
+				<value>0</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/gun[3]/serviceable</property>
+				<value>0</value>
+			</binding>
+		</button>
+
+		<button>
+			<legend>MG-151 Pods</legend>
+			<equal>true</equal>
+			<default>true</default>
+			<row>1</row>
+			<col>0</col>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/pylon[0]/type</property>
+				<value>1</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/pylon[2]/type</property>
+				<value>1</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/weight[0]/selected</property>
+				<value>MG-151 Pod</value>
+			</binding>
+
+			<binding>
+				<command>property-assign</command>
+				<property>sim/weight[2]/selected</property>
+				<value>MG-151 Pod</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/gun[2]/serviceable</property>
+				<value>1</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/gun[3]/serviceable</property>
+				<value>1</value>
+			</binding>
+		</button>
+
+		<button>
+			<legend>WGR-21 Rocket Tube</legend>
+			<equal>true</equal>
+			<default>true</default>
+			<row>1</row>
+			<col>1</col>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/pylon[0]/type</property>
+				<value>2</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/pylon[2]/type</property>
+				<value>2</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/weight[0]/selected</property>
+				<value>WGR-21 loaded</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/weight[0]/weight-lb</property>
+				<value>280</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/weight[2]/selected</property>
+				<value>WGR-21 loaded</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/weight[2]/weight-lb</property>
+				<value>280</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/weapon_selected</property>
+				<value>3</value>
+			</binding>
+		</button>
+	</group>
+
+	<hrule/>
+
+	<group>
+		<layout>table</layout>
+
+		<text>
+			<row>0</row>
+			<col>1</col>
+			<label>Center:</label>
+		</text>
+
+		<button>
+			<legend>unload</legend>
+			<equal>true</equal>
+			<default>true</default>
+			<row>0</row>
+			<col>2</col>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/pylon[1]/type</property>
+				<value>0</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/pylon[1]/weapon_selected</property>
+				<value>1</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/weight[1]/selected</property>
+				<value>none</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>controls/armament/fuse-control</property>
+				<value>false</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>consumables/fuel/tank[1]/capacity-gal_us</property>
+				<value>0</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>consumables/fuel/tank[1]/level-gal_us</property>
+				<value>0</value>
+			</binding>
+		</button>
+
+		<button>
+			<legend>Droptank</legend>
+			<equal>true</equal>
+			<default>true</default>
+			<row>1</row>
+			<col>0</col>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/pylon[1]/type</property>
+				<value>2</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/weight[1]/selected</property>
+				<value>Droptank</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>consumables/fuel/tank[1]/capacity-gal_us</property>
+				<value>120</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>consumables/fuel/tank[1]/level-gal_us</property>
+				<value>120</value>
+			</binding>
+		</button>
+		<button>
+			<legend>250 kg Bomb</legend>
+			<equal>true</equal>
+			<default>true</default>
+			<row>1</row>
+			<col>1</col>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/pylon[1]/type</property>
+				<value>3</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/armament/weapon_selected</property>
+				<value>1</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>controls/armament/fuse-control</property>
+				<value>true</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/weight[1]/selected</property>
+				<value>Bomb 500 lbs</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>sim/weight[1]/weight-lb</property>
+				<value>500</value>
+			</binding>
+		</button>
+	</group>
+
+</PropertyList>

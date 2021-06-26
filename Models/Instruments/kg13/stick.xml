@@ -1,0 +1,56 @@
+<?xml version = '1.0' ?>
+<PropertyList>
+
+<!-- Control Column -->
+
+<path>stick.ac</path>
+
+	<animation>
+	<type>rotate</type>
+	<object-name>Stick</object-name>
+	<object-name>trigger</object-name>
+	<object-name>cover1</object-name>
+	<object-name>case2</object-name>
+	<object-name>case3</object-name>
+	<object-name>button1</object-name>
+	<object-name>button2</object-name>
+	<object-name>button3</object-name>
+		<property>controls/flight/elevator</property>
+		<factor>20</factor>
+		<center>
+			<x-m>0.01433</x-m>
+			<y-m>0</y-m>
+			<z-m>0.0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+	<type>rotate</type>
+	<object-name>Stick</object-name>
+	<object-name>trigger</object-name>
+	<object-name>cover1</object-name>
+	<object-name>case2</object-name>
+	<object-name>case3</object-name>
+	<object-name>button1</object-name>
+	<object-name>button2</object-name>
+	<object-name>button3</object-name>
+		<property>controls/flight/aileron</property>
+		<factor>20</factor>
+		<center>
+			<x-m>0.01433</x-m>
+			<y-m>0</y-m>
+			<z-m>0.0</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+
+</PropertyList>

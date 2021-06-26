@@ -1,0 +1,240 @@
+<?xml version="1.0" ?> 
+  <PropertyList> 
+    <path>pedals.ac</path> 
+
+<!-- bremsen -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftPedal</object-name>
+  <property>controls/gear/brake-left</property>
+  <factor>-9</factor>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>3.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>RightPedal</object-name>
+  <property>controls/gear/brake-right</property>
+  <factor>-9</factor>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>3.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>LeftBreak</object-name>
+  <property>controls/gear/brake-left</property>
+  <factor>-2</factor>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>3.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>RightBreak</object-name>
+  <property>controls/gear/brake-right</property>
+  <factor>-2</factor>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>3.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+ </animation>
+<!-- Ruderbewegung -->
+ <animation>
+  <type>rotate</type>
+  <object-name>RudderBar</object-name>
+  <object-name>anlenkhebel.links</object-name>
+  <object-name>verbindung_links</object-name>
+  <object-name>LeftPedal</object-name>
+  <object-name>LeftBreak</object-name>
+  <object-name>LeftPivot</object-name>
+  <object-name>anlenkhebel.rechts</object-name>
+  <object-name>verbindung_rechts</object-name>
+  <object-name>RightPedal</object-name>
+  <object-name>RightBreak</object-name>
+  <object-name>RightPivot</object-name>
+  <property>controls/flight/rudder</property>
+  <factor>12</factor>
+  <axis>
+   <x>0.0</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+  <center>
+   <x-m>0.08</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>rudder_bar_2</object-name>
+  <property>controls/flight/rudder</property>
+  <factor>12</factor>
+  <axis>
+   <x>0.0</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+  <center>
+   <x-m>0.038</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>LeftPedal</object-name>
+  <object-name>LeftBreak</object-name>
+  <object-name>LeftPivot</object-name>
+  <object-name>verbindung_links</object-name>
+  <property>controls/flight/rudder</property>
+  <factor>-12</factor>
+  <axis>
+   <x>0.0</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+  <center>
+   <x-m>-0.025</x-m>
+   <y-m>-0.21</y-m>
+   <z-m>0.0</z-m>
+  </center>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>RightPedal</object-name>
+  <object-name>RightBreak</object-name>
+  <object-name>RightPivot</object-name>
+  <object-name>verbindung_rechts</object-name>
+  <property>controls/flight/rudder</property>
+  <factor>-12</factor>
+  <axis>
+   <x>0.0</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+  <center>
+   <x-m>-0.02</x-m>
+   <y-m>0.22</y-m>
+   <z-m>0.0</z-m>
+  </center>
+ </animation>
+
+
+<animation>
+  <type>rotate</type>
+  <object-name>anlenkhebel.links</object-name>
+  <property>controls/flight/rudder</property>
+  <factor>-4.5</factor>
+  <axis>
+   <x>0.0</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+  <center>
+   <x-m>0.</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+ </animation>
+<animation>
+  <type>translate</type>
+  <object-name>anlenkhebel.links</object-name>
+  <property>controls/flight/rudder</property>
+  <factor>0.015</factor>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>anlenkhebel.rechts</object-name>
+  <property>controls/flight/rudder</property>
+  <factor>-4.5</factor>
+  <axis>
+   <x>0.0</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+  <center>
+   <x-m>0.</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+ </animation>
+<animation>
+  <type>translate</type>
+  <object-name>anlenkhebel.rechts</object-name>
+  <property>controls/flight/rudder</property>
+  <factor>-0.015</factor>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+
+<animation>
+  <type>translate</type>
+  <object-name>SeilzugLinks</object-name>
+  <property>controls/flight/rudder</property>
+  <factor>0.06</factor>
+  <axis>
+   <x>1.0</x>
+   <y>-0.5</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+<animation>
+  <type>translate</type>
+  <object-name>SeilzugRechts</object-name>
+  <property>controls/flight/rudder</property>
+  <factor>-0.06</factor>
+  <axis>
+   <x>1.0</x>
+   <y>0.5</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+
+</PropertyList>

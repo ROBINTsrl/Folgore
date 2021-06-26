@@ -1,0 +1,687 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+Macchi MC 202 Folgore simulation config.
+
+June 2021,  Michele Santucci
+************************************************************************
+-->
+
+<PropertyList>
+  <combat>
+    <enabled type="bool">true</enabled>
+  </combat>
+
+  <hitcount type="float">0.0</hitcount>
+
+  <sim>
+    <description>Macchi Castoldi M.C. 202 Folgore</description>
+    <author>Michele Santucci</author>
+    <status>pre-alpha</status>
+
+    <rating>
+      <FDM type="int">4</FDM>
+      <systems type="int">4</systems>
+      <model type="int">4</model>
+      <cockpit type="int">5</cockpit>
+    </rating>
+
+    <tags>
+      <tag>fighter</tag>
+      <tag>macchi</tag>
+      <tag>1940s</tag>
+      <tag>ww2</tag>
+      <tag>tail-dragger</tag>
+      <tag>retractable-gear</tag>
+      <tag>propeller</tag>
+      <tag>piston</tag>
+      <tag>single-engine</tag>
+      <tag>variable-pitch</tag>
+    </tags>
+
+    <startup>
+      <splash-texture>Aircraft/mc202/Splash/mc202splash-1.png</splash-texture>
+      <splash-texture>Aircraft/mc202/Splash/mc202splash-2.png</splash-texture>
+    </startup>
+
+    <flight-model>yasim</flight-model>
+
+    <aero>mc202-yasim</aero>
+
+    <armament include="Include/armament.xml">
+    </armament>
+
+    <failure-manager>
+      <controls-failure-drag type="double">1.0</controls-failure-drag>
+      <controls-failure-roll type="double">0.7</controls-failure-roll>
+      <engines>
+        <engine n="0">
+          <propstrike type="bool">false</propstrike>
+          <propstrike-force type="float">0</propstrike-force>
+        </engine>
+      </engines>
+      <flaps type="bool">false</flaps>
+      <left-wing-torn type="bool">false</left-wing-torn>
+      <right-wing-torn type="bool">false</right-wing-torn>
+      <gear>
+        <gear n="0">
+          <jammed type="bool">false</jammed>
+        </gear>
+        <gear n="1">
+          <jammed type="bool">false</jammed>
+        </gear>
+        <gear n="2">
+          <jammed type="bool">false</jammed>
+        </gear>
+      </gear>
+      <fail-type type= "int">0</fail-type>
+    </failure-manager>
+    <systems>
+      <electrical>
+        <path>Aircraft/Generic/generic-electrical.xml</path>
+      </electrical>
+    </systems>
+
+    <virtual-cockpit archive="y">true</virtual-cockpit>
+    <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+
+    <sound>
+      <path>Aircraft/mc202/Sounds/mc202-sound.xml</path>
+    </sound>
+
+    <submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/mc202/Models/submodels.xml</path>
+    </submodels>
+
+    <model>
+      <path>Aircraft/mc202/Models/mc202.xml</path>
+      <fallback-model-index type="int">402</fallback-model-index>
+      <cockpit>
+        <amb_correction type="double">0.2</amb_correction>
+        <refl_correction type="double">0.2</refl_correction>
+      </cockpit>
+      <map>
+        <default_exit>
+          <x-offset-m>4</x-offset-m>
+          <y-offset-m>-1.0</y-offset-m>
+        </default_exit>
+      </map>
+      <crew>
+
+        <pilot n="0">
+          <hair>0</hair>
+          <pose include = "Include/pilot-pose.xml"></pose>
+        </pilot>
+
+      </crew>
+      <livery>
+        <trop type="bool">false</trop>
+        <variant type="string">Default</variant>
+        <amb_correction type="double">0.1</amb_correction>
+        <dirt_factor type="double">0.5</dirt_factor>
+        <refl_correction type="double">-0.4</refl_correction>
+      </livery>
+
+      <logo>
+        <display type="int" userarchive="y">0</display>
+        <name>FlightGear</name>
+        <texture>../../Generic/Logos/FlightGear.png</texture>
+      </logo>
+
+      <crew>
+        <pilot>
+          <visible>1.0</visible>
+        </pilot>
+      </crew>
+    </model>
+
+    <multiplay include="Dialogs/multiplay.xml">
+    </multiplay>
+
+    <tutorials>
+      <tutorial include="Tutorials/startup_tutorial.xml"/>
+    </tutorials>
+
+    <view n="0">
+      <internal archive="y">true</internal>
+      <config>
+        <x-offset-m archive="y" type="double">0.0</x-offset-m>
+        <y-offset-m archive="y" type="double">0.78</y-offset-m>
+        <z-offset-m archive="y" type="double">0.93</z-offset-m>
+        <pitch-offset-deg>-7.5</pitch-offset-deg>
+      </config>
+    </view>
+
+    <view n="1">
+      <config>
+        <target-z-offset-m archive="y" type="double">0.35</target-z-offset-m>
+      </config>
+    </view>
+
+    <view n="2">
+      <config>
+        <target-z-offset-m archive="y" type="double">0.35</target-z-offset-m>
+      </config>
+    </view>
+
+    <view n="3">
+      <config>
+        <target-z-offset-m archive="y" type="double">0.35</target-z-offset-m>
+      </config>
+    </view>
+
+    <view n="4">
+      <config>
+        <target-z-offset-m archive="y" type="double">0.35</target-z-offset-m>
+      </config>
+    </view>
+
+    <view n="5">
+      <config>
+        <target-z-offset-m archive="y" type="double">0.35</target-z-offset-m>
+      </config>
+    </view>
+
+    <view n="6">
+      <config>
+        <target-z-offset-m archive="y" type="double">0.35</target-z-offset-m>
+      </config>
+    </view>
+    <view n="7">
+      <config>
+        <target-z-offset-m archive="y" type="double">0.35</target-z-offset-m>
+      </config>
+    </view>
+
+    <view n="100">
+      <name>Pilot Cam</name>
+      <type>lookfrom</type>
+      <internal archive="y">true</internal>
+      <config>
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+        <ground-level-nearplane-m type="double">0.01</ground-level-nearplane-m>
+        <default-field-of-view-deg type="double">70.0</default-field-of-view-deg>
+        <default-pitch-deg type="double">0</default-pitch-deg>
+        <default-heading-deg type="double">0</default-heading-deg>
+        <front-direction-deg type="double">0</front-direction-deg>
+        <x-offset-m archive="y" type="double">-0.14</x-offset-m>
+        <y-offset-m archive="y" type="double">0.55</y-offset-m>
+        <z-offset-m archive="y" type="double">0.235</z-offset-m>
+        <pitch-offset-deg>-1</pitch-offset-deg>
+        <heading-offset-deg>190</heading-offset-deg>
+      </config>
+    </view>
+
+    <autopilot>
+      <config>
+        <min-climb-speed-kt type="float">70.0</min-climb-speed-kt>
+        <best-climb-speed-kt type="float">75.0</best-climb-speed-kt>
+        <target-climb-rate-fpm type="float">500.0</target-climb-rate-fpm>
+        <target-descent-rate-fpm type="float">1000.0</target-descent-rate-fpm>
+        <elevator-adj-factor type="float">4000.0</elevator-adj-factor>
+        <integral-contribution type="float">0.01</integral-contribution>
+        <zero-pitch-throttle type="float">0.45</zero-pitch-throttle>
+        <zero-pitch-trim-full-throttle type="float">0.14</zero-pitch-trim-full-throttle>
+      </config>
+    </autopilot>
+
+    <hud>
+      <enable3d>false</enable3d>
+    </hud>
+
+    <help>
+      <key>
+        <name>Ctrl-l</name>
+        <desc>toggle Tailwheel Lock</desc>
+      </key>
+      <key>
+        <name>C</name>
+        <desc>toggle Canopy</desc>
+      </key>
+      <key>
+        <name>Ctrl-p</name>
+        <desc>Toggle automatic Propeller Adjustment</desc>
+      </key>
+      <key>
+        <name>N</name>
+        <desc>Propeller Coarse</desc>
+      </key>
+      <key>
+        <name>n</name>
+        <desc>Propeller Fine</desc>
+      </key>
+      <key>
+        <name>l</name>
+        <desc>Livery Select</desc>
+      </key>
+      <key>
+        <name>ctrl-d</name>
+        <desc>Drop (external) Tank</desc>
+      </key>
+      <key>
+        <name>q/Q</name>
+        <desc>Toggle Master Arm on/off</desc>
+      </key>
+      <key>
+        <name>e</name>
+        <desc>Fire MG</desc>
+      </key>
+      <key>
+        <name>E</name>
+        <desc>Fire Engine Cannon</desc>
+      </key>
+      <key>
+        <name>ctrl-e</name>
+        <desc>Drop Bomb</desc>
+      </key>
+      <key>
+        <name>H</name>
+        <desc>Fire WGR 21</desc>
+      </key>
+
+      <text>Use the Equipment-Fuel and Payload Dialog to select external Stores. l toggles the Livery select Dialog
+
+Some notes on the propeller adjust mechanism:
+
+This is no constant speed unit!
+
+Propeller pitch advance is gouverned by a running line dependent on the engine rpm/manifold pressure relation. There is a lever beneath the throttle quadrant to switch between automatic/manual adjust. Manual is the rear rest of the switch and should be used for startup and taxi.
+
+The actual amount of propeller pitch is displayed on the clock shaped Instrument on the right side of the panel. The range counts counter clockwise starting at 12.30 (full fine) to 8.30 (full course).
+
+---Start up---
+Ensure propeller adjust automatic is set to manual, and the pitch is set to 11.00. Set cutoff lever (right of throttle lever) to open, operate primer (left of seat) 5-6 times. Switch ignition (left side of the panel) to M1+2. Open throttle a bit and pull the starter Handle (beneath Mag-Switch). Be sure to open(offen) the radiator flaps (lever right beneath the panel).
+---Take Off---
+Flaps (the left wheel on the left side of the seat) down 10 degrees, Take off at 1.1 ata Manifold Pressure. When advancing the throttle past 75%  propeller pitch adjustment will engage automatically. Lift Tailwheel at 120-150 km/h. Be prepared to use Aileron against Torque and Rudder to counteract Swing. Lift Off at 190-200 km/h.
+Climb with 1.1 ata (Max Continous Power) 1.3 ata is limited to 30 min. 1.4 ata is limited to 5 min. Radiator flaps can be set to automatic.
+
+---Landing---
+Beware: While engine runs on low rpm (or beneath 0.9 ata manifold pressure), switch automatic propeller adjustment off (Ctrl-p) or else the propeller pitch will run too course. Set propeller pitch to 10.30.
+Lower Flaps and Gear under 300 km/h. Open radiator flaps. Approach Speed is 200 km/h. A curved Approach is recommended, because visibility on Final is bad. Speed at Treshold should be 175 km/h. Flare to Threepoint attitude before touchdown. After Touchdown use Rudder to keep the Aircraft straight.
+Don't forget to release Tailwheel lock (lever on the left cockpitwall) before taxiing off the Runway.</text>
+    </help>
+
+
+    <weight n="0">
+      <name>left wing</name>
+      <tank>1</tank>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+        <name>Select Loadout via the Payload Dialog</name>
+        <lbs>0</lbs>
+      </opt>
+    </weight>
+
+    <weight n="1">
+      <name>Center</name>
+      <weight-lb type="double">0</weight-lb>
+      <selected>none</selected>
+      <opt>
+        <name>Select Loadout via the Payload Dialog</name>
+        <lbs>0</lbs>
+      </opt>
+    </weight>
+
+    <weight n="2">
+      <name>right Wing</name>
+      <weight-lb type="double">0</weight-lb>
+      <selected>none</selected>
+      <opt>
+        <name>Select Loadout via the Payload Dialog</name>
+        <lbs>0</lbs>
+      </opt>
+    </weight>
+
+    <menubar>
+      <default>
+        <menu n="10">
+          <label>MC202</label>
+          <enabled type="bool">true</enabled>
+          <item>
+            <label>Magically start engine</label>
+            <binding>
+              <command>nasal</command>
+              <script>mc202.magicstart();</script>
+            </binding>
+          </item>
+          <item>
+            <label>Configuration</label>
+            <binding>
+              <command>nasal</command>
+              <script>mc202.config.open()</script>
+            </binding>
+          </item>
+          <item>
+            <label>Payload (only on Ground)</label>
+            <binding>
+              <command>nasal</command>
+              <script><![CDATA[
+              if (getprop("/velocities/groundspeed-kt") <=0.1) {
+                mc202.payload.open();
+              }
+            ]]>
+              </script>
+            </binding>
+          </item>
+        </menu>
+      </default>
+    </menubar>
+  </sim>
+
+  <engines>
+    <engine>
+      <mp-osi>3.0</mp-osi>
+      <coolant-temp-degc type="float">15.0</coolant-temp-degc>
+      <oiltempc type = "float">15.0</oiltempc>
+      <oil-visc type = "float">0.1</oil-visc>
+      <oil-press type = "float">0.0</oil-press>
+      <fuel-press type ="float">0.0</fuel-press>
+      <rev-strain type="int">0</rev-strain>
+      <overrev type="int">0</overrev>
+      <overheat type="int">0</overheat>
+      <rpm type="float">0.0</rpm>
+    </engine>
+  </engines>
+
+  <velocities>
+    <airspeed-kt type="float">0.0</airspeed-kt>
+  </velocities>
+
+  <consumables>
+    <fuel>
+      <on-reserve type="int">0</on-reserve>
+      <tank n="0">
+        <name>Internal</name>
+        <selected type="bool">false</selected>
+      </tank>
+      <tank n="1">
+        <name>Droptank</name>
+        <selected type="bool">false</selected>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <!-- set prop for the manual "bookmark" arrow on the remote compas -->
+  <instrumentation>
+    <magnetic-compass>
+      <bookmark-heading-deg type="double">43.0</bookmark-heading-deg>
+    </magnetic-compass>
+  </instrumentation>
+
+  <!-- set up control properties for YASim -->
+  <controls>
+    <armament>
+      <fuse-control type ="bool">false</fuse-control>
+      <gun n="0">
+        <serviceable type="bool">true</serviceable>
+        <fire type="bool">false</fire>
+      </gun>
+      <revi>
+        <position-norm type="float">1.0</position-norm>
+        <shadeup type="bool">false</shadeup>
+      </revi>
+      <station n="0">
+        <fused type="bool">false</fused>
+        <fuse-type type="int">2</fuse-type>
+        <release type="bool">false</release>
+      </station>
+      <trigger type="bool">false</trigger>
+    </armament>
+    <canopy>
+      <jetthandle-pulled type="bool">false</jetthandle-pulled>
+      <release type="bool">false</release>
+    </canopy>
+    <engines>
+      <engine n="0">
+        <magnetos>0</magnetos>
+        <target-mp type="float">0</target-mp>
+        <boost type="float">0.7</boost>
+        <blower type="int">0</blower>
+        <prop-auto type="bool">false</prop-auto>
+        <propeller-adjust type="float">1.0</propeller-adjust>
+        <fueldump-pulled type="bool">false</fueldump-pulled>
+        <primer type="double">0.0</primer>
+        <primer-pressed type="bool">0.0</primer-pressed>
+        <radlever type="double">0.0</radlever>
+        <throttle-c type="float">0</throttle-c>
+        <cowl-flaps-norm type="float">0.0</cowl-flaps-norm>
+        <coolflap-auto type ="int">0</coolflap-auto>
+        <on-startup-running type="bool">false</on-startup-running>
+      </engine>
+    </engines>
+
+    <gear>
+      <gear n="0">
+        <gear-down type="bool">true</gear-down>
+      </gear>
+      <gear n="1">
+        <gear-down type="bool">true</gear-down>
+      </gear>
+      <gear n="2">
+        <gear-down type="bool">true</gear-down>
+      </gear>
+      <gear n="3">
+        <gear-down type="bool">false</gear-down>
+      </gear>
+      <tailwheel-lock>true</tailwheel-lock>
+      <bellybrake type="float">1.0</bellybrake>
+      <emergency-extension type="bool">false</emergency-extension>
+      <emergency-extension-pulled type="bool">false</emergency-extension-pulled>
+      <brake-parking type="bool">true</brake-parking>
+    </gear>
+
+    <!-- TODO: CHECK No aileron or rudder trim controls  -->
+    <flight>
+      <aileron-trim>0.045</aileron-trim>
+    </flight>
+
+    <fuel>
+      <jett type="int">0</jett>
+      <switch-position type = "int">-1</switch-position>
+      <tank n="0">
+        <fuel_selector>true</fuel_selector>
+      </tank>
+      <tank n="1">
+        <fuel_selector>true</fuel_selector>
+      </tank>
+    </fuel>
+
+    <startup>
+      <config type="bool" userarchive="y">0</config>
+      <idling type="bool" userarchive="y">1</idling>
+    </startup>
+
+  </controls>
+
+  <!-- Map Keys -->
+  <input>
+    <keyboard>
+      <key n="108">
+        <name>l</name>
+        <desc>Toggle Tailwheel Lock.</desc>
+        <binding>
+          <command>property-toggle</command>
+          <property>controls/gear/tailwheel-lock</property>
+        </binding>
+      </key>
+
+      <key n="16">
+        <name>Ctrl-P</name>
+        <desc>Toggle automatic Propeller adjustment.</desc>
+        <binding>
+          <command>property-toggle</command>
+          <property>/controls/engines/engine[0]/prop-auto</property>
+        </binding>
+      </key>
+
+      <key n="67">
+        <name>C</name>
+        <desc>Toggle Canopy</desc>
+        <binding n="0">
+          <command>nasal</command>
+          <script>mc202.toggle_canopy()</script>
+        </binding>
+      </key>
+
+
+      <key n="110">
+        <name>n</name>
+        <desc>Propeller Finer</desc>
+        <repeatable type="bool">true</repeatable>
+        <binding>
+          <command>property-adjust</command>
+          <property>/controls/engines/engine[0]/propeller-adjust</property>
+          <step type="double">0.01</step>
+          <min type="double">0</min>
+          <max type="double">1</max>
+        </binding>
+      </key>
+
+      <key n="78">
+        <name>N</name>
+        <desc>Propeller Coarser</desc>
+        <repeatable type="bool">true</repeatable>
+        <binding>
+          <command>property-adjust</command>
+          <property>/controls/engines/engine[0]/propeller-adjust</property>
+          <step type="double">-0.01</step>
+          <min type="double">0</min>
+          <max type="double">1</max>
+        </binding>
+      </key>
+
+      <key n="4">
+        <name>Ctrl-d</name>
+        <desc>drop Tank</desc>
+        <binding>
+          <command>nasal</command>
+          <script>weapons.drop_tank()</script>
+        </binding>
+      </key>
+
+      <key n="113">
+        <name>q</name>
+        <desc>Toggle Master Arm on</desc>
+        <binding>
+          <command>property-adjust</command>
+          <property>/controls/armament/master-arm</property>
+          <step type="double">1</step>
+          <min type="double">0</min>
+          <max type="double">1</max>
+        </binding>
+      </key>
+
+      <key n="81">
+        <name>Q</name>
+        <desc>Toggle Master Arm off</desc>
+        <binding>
+          <command>property-adjust</command>
+          <property>/controls/armament/master-arm</property>
+          <step type="double">-1</step>
+          <min type="double">0</min>
+          <max type="double">1</max>
+        </binding>
+      </key>
+
+      <key n="101">
+        <name>e</name>
+        <desc>Fire MG</desc>
+        <binding>
+          <command>property-toggle</command>
+          <property>controls/armament/trigger</property>
+        </binding>
+        <mod-up>
+          <binding>
+            <command>property-toggle</command>
+            <property>controls/armament/trigger</property>
+          </binding>
+        </mod-up>
+      </key>
+
+      <key n="69">
+        <name>E</name>
+        <desc>fire engine Cannon</desc>
+        <binding>
+          <command>property-toggle</command>
+          <property>controls/armament/trigger1</property>
+        </binding>
+        <mod-up>
+          <binding>
+            <command>property-toggle</command>
+            <property>controls/armament/trigger1</property>
+          </binding>
+        </mod-up>
+      </key>
+
+      <key n="5">
+        <name>Ctrl-e</name>
+        <desc>drop Center Load</desc>
+        <binding>
+          <command>property-toggle</command>
+          <property>controls/armament/trigger2</property>
+        </binding>
+        <mod-up>
+          <binding>
+            <command>property-toggle</command>
+            <property>controls/armament/trigger2</property>
+          </binding>
+        </mod-up>
+      </key>
+
+      <key n="102">
+        <name>f</name>
+        <desc>fuel tank select</desc>
+        <binding>
+          <command>nasal</command>
+          <script>mc202.fuel_switch()</script>
+        </binding>
+      </key>
+
+      <key n="72">
+        <name>H</name>
+        <desc>Fire WGr 21</desc>
+        <binding n="0">
+          <command>nasal</command>
+          <script>mc202.fire_wgr()</script>
+        </binding>
+      </key>
+
+      <key n="115">
+        <name>s</name>
+        <binding>
+          <command>nasal</command>
+          <script>mc202.starter(1)</script>
+        </binding>
+        <mod-up>
+          <binding>
+            <command>nasal</command>
+            <script>mc202.starter(0)</script>
+          </binding>
+        </mod-up>
+      </key>
+    </keyboard>
+  </input>
+
+  <!-- Nasal files/scripts -->
+  <nasal>
+    <startup>
+      <file>Aircraft/mc202/Nasal/startup.nas</file>
+    </startup>
+    <mc202>
+      <file>Aircraft/mc202/Nasal/mc202.nas</file>
+    </mc202>
+    <weapons>
+      <file>Aircraft/mc202/Nasal/weapons.nas</file>
+    </weapons>
+    <failure>
+      <file>Aircraft/mc202/Nasal/failure.nas</file>
+    </failure>
+    <hitcheck>
+      <file>Aircraft/mc202/Nasal/hitcheck.nas</file>
+    </hitcheck>
+  </nasal>
+
+</PropertyList>
