@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList> 
+
+  <path>compass2.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>visses</object-name>
+    <object-name>compassH</object-name>
+    <object-name>compassB</object-name>
+    
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>fond2</object-name>
+    <object-name>compassH</object-name>
+    <object-name>compassB</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>compassH</object-name>
+    <property>instrumentation/magnetic-compass/indicated-heading-deg</property>
+    <center> 
+      <x-m> -0.04132 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.00000 </z-m>
+    </center>
+    <axis> 
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>compassB</object-name>
+    <property>/orientation/heading-deg</property>
+    <center> 
+      <x-m> -0.04132 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.00000 </z-m>
+    </center>
+    <axis> 
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>

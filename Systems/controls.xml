@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <lighting>
+    <instrument-lights type="bool">false</instrument-lights>
+    <nav-lights type="bool">false</nav-lights>
+    <taxi-lights type="bool">false</taxi-lights>
+    <strobe-lights type="bool">false</strobe-lights>
+    <landing-lights type="bool">false</landing-lights>
+    <luminosite-lights type="float">1</luminosite-lights>
+    <floods-lights type="float">0.5</floods-lights>
+  </lighting>
+  
+  <gear>
+    <brake-parking type="bool">1</brake-parking>
+  </gear>
+  
+  <engines>
+    <engine n="0">
+      <magnetos>0</magnetos>
+    </engine>
+  </engines>
+  
+  <armament>
+    <trigger type="bool">false</trigger>
+    <master-arm type="bool">true</master-arm>
+    <position-norm type="int">1</position-norm>
+  </armament>
+  
+  <flight>
+    <rudder-trim>    0.000 </rudder-trim>
+    <aileron-trim>   0.018 </aileron-trim>
+    <elevator-trim> -0.010 </elevator-trim>
+  </flight>
+  
+</PropertyList>

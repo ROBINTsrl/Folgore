@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>Macchi Castoldi MC202 Folgore</title>
+  <line>______________________________________________</line>
+  <key>
+    <name>d</name>
+    <desc>Open/Close canopy</desc>
+  </key>
+  <key>
+    <name>e</name>
+    <desc>Guns fire</desc>
+  </key>
+
+</PropertyList>

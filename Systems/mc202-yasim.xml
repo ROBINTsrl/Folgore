@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Macchi MC202         : SANTUCCI Michele (2021) 
+
+     Sources              : https://it.wikipedia.org/wiki/Macchi_M.C.202
+                            https://en.wikipedia.org/wiki/Macchi_C.202_Folgore
+                            https://it.wikipedia.org/wiki/Daimler-Benz_DB_601
+                            https://it.wikipedia.org/wiki/Alfa_Romeo_RA_1000_RC.41
+
+     Wingspan             : 11.85 m  (   34 ft 9     in )
+     Length               :  8.85 m  (   29 ft          )
+     Height               :  3.036 m  (  10 ft          ) (without antenna mast)
+     Empty weight         :  2350 kg ( 5181 lb          )
+     Max takeoff weight   :  3718 kg ( 6460 lb          )
+     Engine               : Alfa Romeo RA.1000 R.C.41     (license-built Daimler-Benz DB 601Aa) liquid-cooled inverted V-12 ( 1050 hp )
+     Max speed            : 599 km/h (  323 kt          ) at 5600 m ( 18373 ft )
+     Cruise speed         : 490 km/h (  265 kt          )
+-->
+<airplane mass="5181" version="YASIM_VERSION_CURRENT" mtow-lbs="6460">
+
+      <approach speed="80" aoa="2" fuel="0.25" glide-angle="4.92">
+            <control-setting axis="/controls/engines/engine[0]/throttle" value="0.3"/>
+            <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
+            <control-setting axis="/controls/gear/gear-down" value="1"/>
+            <control-setting axis="/controls/flight/flaps" value="1"/>
+            <solve-weight idx="0" weight="180"/>
+      </approach>
+
+      <cruise speed="265" alt="18000">
+            <control-setting axis="/controls/engines/engine[0]/throttle" value="0.8"/>
+            <control-setting axis="/controls/engines/engine[0]/mixture" value="0.8" />
+            <control-setting axis="/controls/gear/gear-down" value="0"/>
+            <control-setting axis="/controls/flight/flaps" value="0"/>
+            <solve-weight idx="0" weight="180"/>
+      </cruise>
+
+      <cockpit x="-0.80" y="0" z="0.77"/>
+      <weight x="-0.8" y="0" z="0.23" mass-prop="/sim/weight[0]/weight-lb"/>
+
+      <!-- Propeller hub -->
+      
+      <fuselage ax=" 3.435" ay=" 0.000" az=" 0.008" bx=" 3.323" by=" 0.000" bz=" 0.008" width="0.406" taper="0.50" midpoint="1"/>
+      <fuselage ax=" 3.323" ay=" 0.000" az=" 0.008" bx=" 3.128" by=" 0.000" bz=" 0.008" width="0.606" taper="0.67" midpoint="1"/>
+      <fuselage ax=" 3.128" ay=" 0.000" az=" 0.008" bx=" 2.930" by=" 0.000" bz=" 0.008" width="0.715" taper="0.85" midpoint="1"/>
+
+      <!-- Fuselage -->
+      <fuselage ax=" 2.930" ay=" 0.000" az=" 0.008" bx=" 2.512" by=" 0.000" bz=" 0.054" width="0.827" taper="0.85" midpoint="1"/>
+      <fuselage ax=" 2.512" ay=" 0.000" az=" 0.054" bx=" 1.856" by=" 0.000" bz=" 0.141" width="0.862" taper="0.96" midpoint="1"/>
+      <fuselage ax=" 1.856" ay=" 0.000" az=" 0.141" bx=" 0.606" by=" 0.000" bz=" 0.230" width="0.862" taper="1.00" midpoint="1"/>
+      <fuselage ax=" 0.637" ay=" 0.000" az=" 0.230" bx=" -0.358" by=" 0.000" bz=" 0.230" width="0.862" taper="1.00" midpoint="1"/>
+      <fuselage ax=" -0.358" ay=" 0.000" az=" 0.230" bx="-2.370" by=" 0.000" bz=" 0.230" width="0.862" taper="1.00" midpoint="1"/>
+      <fuselage ax="-2.370" ay=" 0.000" az=" 0.230" bx="-3.765" by=" 0.000" bz=" 0.211" width="0.862" taper="0.74" midpoint="0"/>
+      <fuselage ax="-3.765" ay=" 0.000" az=" 0.211" bx="-4.296" by=" 0.000" bz=" 0.197" width="0.638" taper="0.86" midpoint="0"/>
+      <fuselage ax="-4.296" ay=" 0.000" az=" 0.197" bx="-5.828" by=" 0.000" bz=" 0.233" width="0.549" taper="0.15" midpoint="0"/>
+
+      <!-- Fuselage  -->
+      <fuselage ax=" 2.930" ay=" 0.000" az=" 0.008" bx=" 2.512" by=" 0.000" bz=" -0.033" width="0.827" taper="0.85" midpoint="1"/>
+      <fuselage ax=" 2.512" ay=" 0.000" az=" -0.033" bx=" 1.856" by=" 0.000" bz="-0.096" width="0.862" taper="0.96" midpoint="1"/>
+      <fuselage ax=" 1.856" ay=" 0.000" az="-0.096" bx=" 0.606" by=" 0.000" bz="-0.160" width="0.862" taper="1.00" midpoint="1"/>
+      <fuselage ax=" 0.627" ay=" 0.000" az="-0.160" bx=" -0.358" by=" 0.000" bz="-0.160" width="0.862" taper="1.00" midpoint="1"/>
+      <fuselage ax=" -0.358" ay=" 0.000" az="-0.160" bx="-2.370" by=" 0.000" bz=" -0.010" width="0.862" taper="1.00" midpoint="1"/>
+      <fuselage ax="-2.370" ay=" 0.000" az=" -0.010" bx="-3.765" by=" 0.000" bz=" 0.055" width="0.862" taper="0.74" midpoint="0"/>
+      <fuselage ax="-3.765" ay=" 0.000" az=" 0.055" bx="-4.296" by=" 0.000" bz=" 0.116" width="0.638" taper="0.86" midpoint="0"/>
+      <fuselage ax="-4.296" ay=" 0.000" az=" 0.116" bx="-5.828" by=" 0.000" bz=" 0.233" width="0.549" taper="0.15" midpoint="0"/>
+
+      <!-- Cockpit -->
+      <fuselage ax=" -0.063" ay=" 0.000" az=" 0.517" bx=" -0.527" by=" 0.000" bz=" 0.570" width="0.711" taper="0.20" midpoint="1"/>
+      <fuselage ax=" -0.527" ay=" 0.000" az=" 0.570" bx="-1.070" by=" 0.000" bz=" 0.570" width="0.711" taper="0.90" midpoint="0"/>
+      <fuselage ax="-1.070" ay=" 0.000" az=" 0.570" bx="-2.900" by=" 0.000" bz=" 0.542" width="0.64" taper="0.10" midpoint="0"/>
+
+      <wing x="0.3" y="0" z="-0.49" chord="1.95" length="5.4" taper="0.55" sweep="-2.5" dihedral="4.2">
+            <stall aoa="20" width="1" peak="1.5"/>
+
+            <spoiler start="0.073" end="0.165" lift="1.4" drag="1.5"/>
+            <flap0 start="0.166" end="0.56" lift="1.4" drag="1.5"/>
+            <flap1 start="0.56" end="0.95" lift="1.2" drag="1.1"/>
+
+            <control-input control="SPOILER" axis="/controls/flight/spoilers"/>
+            <control-output control="SPOILER" prop="/surface-positions/spoiler-pos-norm"/>
+            <control-speed control="SPOILER" transition-time="1"/>
+
+            <control-input control="FLAP0" axis="/controls/flight/flaps"/>
+            <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+            <control-speed control="FLAP0" transition-time="4"/>
+
+            <control-input control="FLAP1" axis="/controls/flight/aileron" split="true"/>
+            <control-input control="FLAP1" axis="/controls/flight/aileron-trim" split="true"/>
+            <control-output control="FLAP1" side="left" prop="surface-positions/left-aileron-pos-norm"/>
+            <control-output control="FLAP1" side="right" prop="surface-positions/right-aileron-pos-norm"/>
+      </wing>
+
+      <hstab x="-4" y="0.2" z="0.19" chord="1.2" length="1.35" taper="0.51" sweep="5">
+            <stall aoa="18" width="1" peak="1.5"/>
+            <flap0 start="0" end="1" lift="1.2" drag="1.1"/>
+
+            <control-input control="FLAP0" axis="/controls/flight/elevator"/>
+            <control-input control="FLAP0" axis="/controls/flight/elevator-trim"/>
+
+            <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+      </hstab>
+
+      <vstab x="-4.27" y="0" z="0.22" chord="1.45" length="1.415" taper="0.40" sweep="10">
+            <stall aoa="16" width="1" peak="1.5"/>
+            <flap0 start="0" end="1" lift="1.3" drag="1.2"/>
+
+            <control-input control="FLAP0" axis="/controls/flight/rudder" square="true" invert="true"/>
+            <control-input control="FLAP0" axis="/controls/flight/rudder-trim" invert="true"/>
+
+            <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
+      </vstab>
+
+      <!-- Engines   source         : https://it.wikipedia.org/wiki/Daimler-Benz_DB_601
+                                      https://it.wikipedia.org/wiki/Alfa_Romeo_RA_1000_RC.41
+
+                 name               : Alfa Romeo RA.1000 R.C.41     (license-built Daimler-Benz DB 601Aa) liquid-cooled inverted V-12 ( 1050 hp )
+                 type               : 12-cylinder liquid-cooled supercharged 60 deg inverted Vee aircraft piston engine
+                 power cruise       : 1175 hp for takeoff
+                                    : 1050 hp at 4100 m (13450 ft)
+                 compression        : 6,8:1
+                 weight             : 590 kg ( 1301 lb  ) empty
+                 displacement       : 33.929 L ( 2070 in3 )
+      -->
+
+      <!-- Propeller source         : 
+                  
+                  name              : Piaggio P.1001
+                  blades            : 3
+                  mass              : 147,676 Kg ( 326 lb )
+                  diameter          : 3.05 mt
+                  moment            : 
+
+      -->
+      
+      <propeller x="2.15" y="0" z="0" mass="1627" radius="1.525" moment="152" cruise-speed="265" cruise-alt="18000" cruise-power="1050" cruise-rpm="2300" takeoff-power="1175" takeoff-rpm="2800">
+            <actionpt x="3.2" y="0" z="0"/>
+            <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
+            <piston-engine eng-rpm="2800" eng-power="1175" displacement="2070" compression="6.8" turbo-mul="2.9" turbo-lag="0.5" wastegate-mp="52">
+                  <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
+                  <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
+                  <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
+                  <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
+            </piston-engine>
+      </propeller>
+
+      <!-- GUNS RECOIL Left Ext -->
+      <thruster x="1.27" y="1.655" z="-0.273" vx="-1" vy="0" vz="0.043" thrust="718.4">
+            <control-input control="THROTTLE" axis="/controls/armament/trigger"/>
+      </thruster>
+
+      <!-- GUNS RECOIL Left Int -->
+      <thruster x="1.74" y="0.15" z="0.53" vx="-1" vy="0" vz="0.043" thrust="718.4">
+            <control-input control="THROTTLE" axis="/controls/armament/trigger"/>
+      </thruster>
+
+      <!-- GUNS RECOIL Right Int -->
+      <thruster x="1.74" y="-0.15" z="0.53" vx="-1" vy="0" vz="0.043" thrust="718.4">
+            <control-input control="THROTTLE" axis="/controls/armament/trigger"/>
+      </thruster>
+
+      <!-- GUNS RECOIL Right Ext -->
+      <thruster x="1.27" y="-1.655" z="-0.273" vx="-1" vy="0" vz="0.043" thrust="718.4">
+            <control-input control="THROTTLE" axis="/controls/armament/trigger"/>
+      </thruster>
+
+      <!-- left main -->
+      <gear x="0.6" y="1.77367" z="-1.79072" compression="0.3" spring="0.7" damp="4" sfric="0.5" dfric="0.5">
+            <control-input control="BRAKE" axis="/controls/gear/brake-left"/>
+            <control-input control="BRAKE" axis="/controls/gear/brake-parking"/>
+            <control-input control="EXTEND" axis="/controls/gear/gear-down"/>
+
+            <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
+
+            <control-speed control="EXTEND" transition-time="6"/>
+      </gear>
+
+      <!-- right main -->
+      <gear x="0.6" y="-1.77367" z="-1.79072" compression="0.3" spring="0.7" damp="4" sfric="0.5" dfric="0.5">
+            <control-input control="BRAKE" axis="/controls/gear/brake-right"/>
+            <control-input control="BRAKE" axis="/controls/gear/brake-parking"/>
+            <control-input control="EXTEND" axis="/controls/gear/gear-down"/>
+
+            <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
+
+            <control-speed control="EXTEND" transition-time="5"/>
+      </gear>
+
+      <!-- Tail wheel -->
+      <gear x="-4.68" y="0" z="-0.385" compression="0.2" sfric="0.5" dfric="0.3">
+            <control-input control="STEER" axis="/controls/flight/rudder" square="true" src0="-1.0" src1="1.0" dst0="0.8" dst1="-0.8"/>
+            <control-input control="EXTEND" axis="/controls/gear/gear-down"/>
+
+            <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
+
+            <control-speed control="EXTEND" transition-time="4"/>
+      </gear>
+
+      <!-- Fake GEARS for crash-landing / splash -->
+      <!-- nose -->
+      <gear x="3.2" y="0" z="-1.525" ignored-by-solver="1" on-water="1" compression="0.35" spring="0.1" damp="7.5" dfric="0.1"
+        sfric ="0.1">
+            <control-input control="BRAKE" axis="/controls/gear/body-ground-friction"/>
+      </gear>
+
+      <!-- belly -->
+      <gear x="-0.24" y="0" z="-0.72" ignored-by-solver="1" on-water="1" compression="0.05" spring="0.2" damp="7.5" dfric="0.6"
+        sfric ="0.6">
+            <control-input control="BRAKE" axis="/controls/gear/body-ground-friction"/>
+      </gear>
+
+      <!-- wingtips -->
+      <gear x="1.015" y="5.918" z="-0.115" ignored-by-solver="1" on-water="1" compression="0.12" spring="0.2" damp="7.5" dfric="0.6"
+        sfric ="0.6">
+            <control-input control="BRAKE" axis="/controls/gear/body-ground-friction"/>
+      </gear>
+
+      <gear x="1.015" y="-5.918" z="-0.115" ignored-by-solver="1" on-water="1" compression="0.12" spring="0.2" damp="7.5" dfric="0.6"
+        sfric ="0.6">
+            <control-input control="BRAKE" axis="/controls/gear/body-ground-friction"/>
+      </gear>
+
+      <!-- Fuel  -->
+      <tank x=" 1.3" y="0" z="-0.32" capacity="800"/>
+      <tank x="-0.8" y="0" z=" 0.20" capacity="800"/>
+
+</airplane>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <model>
+    <path>Aircraft/Fiat-G55/Models/Interior/Panel/subpanel.xml</path>
+    <offsets>
+      <x-m>  0.026 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.120 </z-m>
+      <pitch-deg> -30 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G55/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.147 </y-m>
+      <z-m>  0.003 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G55/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m> -0.076 </y-m>
+      <z-m>  0.005 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G55/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m> -0.111 </y-m>
+      <z-m>  0.109 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Fiat-G55/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m> -0.002 </x-m>
+      <y-m>  0.060 </y-m>
+      <z-m>  0.140 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G55/Models/Interior/Panel/Instruments/compass2/compass2.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.075 </y-m>
+      <z-m>  0.075 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G55/Models/Interior/Panel/Instruments/man/man.xml</path>
+    <offsets>
+      <x-m>  0.026 </x-m>
+      <y-m> -0.219 </y-m>
+      <z-m>  0.000 </z-m>
+      <heading-deg> 40 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G55/Models/Interior/Panel/Instruments/N-9_Gunsight/N-9_Gunsight.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.014 </y-m>
+      <z-m>  0.121 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G55/Models/Interior/Panel/Instruments/oiltemp/oiltemp.xml</path>
+    <offsets>
+      <x-m>  0.071 </x-m>
+      <y-m> -0.271 </y-m>
+      <z-m>  0.000 </z-m>
+      <heading-deg> 40 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G55/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m> -0.151 </y-m>
+      <z-m>  0.024 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G55/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m>  0.076 </y-m>
+      <z-m>  0.005 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G55/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.005 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

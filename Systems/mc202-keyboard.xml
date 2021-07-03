@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <keyboard>
+    
+    <key n="100">
+      <name>d</name>
+      <desc>Crew door</desc>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </key>
+    
+    <key n="101">
+      <name>e</name>
+      <desc>Guns</desc>
+      <binding>
+        <command>nasal</command>
+        <script>guns.fire_MG()</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>nasal</command>
+          <script>guns.stop_MG()</script>
+        </binding>
+      </mod-up>
+    </key>
+    
+  </keyboard>
+  
+</PropertyList>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Cranking effects -->
+  <!-- Left -->
+  <model>
+    <path>Aircraft/mc202/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.63872 </x-m>
+      <y-m> -0.43734 </y-m>
+      <z-m> -0.07957 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/mc202/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.43735 </x-m>
+      <y-m> -0.44392 </y-m>
+      <z-m> -0.07957 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/mc202/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.26166 </x-m>
+      <y-m> -0.44906 </y-m>
+      <z-m> -0.07957 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/mc202/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.08542 </x-m>
+      <y-m> -0.45423 </y-m>
+      <z-m> -0.07957 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/mc202/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.91778 </x-m>
+      <y-m> -0.45914 </y-m>
+      <z-m> -0.07957 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/mc202/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.73817 </x-m>
+      <y-m> -0.46440 </y-m>
+      <z-m> -0.07957 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>Aircraft/mc202/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.63872 </x-m>
+      <y-m>  0.43734 </y-m>
+      <z-m> -0.07957 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/mc202/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.43735 </x-m>
+      <y-m>  0.44392 </y-m>
+      <z-m> -0.07957 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/mc202/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.26166 </x-m>
+      <y-m>  0.44906 </y-m>
+      <z-m> -0.07957 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/mc202/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.08542 </x-m>
+      <y-m>  0.45423 </y-m>
+      <z-m> -0.07957 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/mc202/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.91778 </x-m>
+      <y-m>  0.45914 </y-m>
+      <z-m> -0.07957 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/mc202/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.73817 </x-m>
+      <y-m>  0.46440 </y-m>
+      <z-m> -0.07957 </z-m>
+    </offsets>
+  </model>
+  
+</PropertyList>
